@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS tienda_virtual;
+CREATE DATABASE IF NOT EXISTS tienda;
 USE tienda_virtual;
 
 CREATE TABLE productos (
