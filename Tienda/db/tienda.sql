@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS tienda;
-USE tienda_virtual;
+USE tienda;
 
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
