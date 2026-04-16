@@ -1,0 +1,214 @@
+/* estilo general */
+
+body {
+    background-color: #121212; 
+    color: #b0c4de; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 20px;
+}
+
+/* Diseño para el contenedor principal*/
+.container { 
+    width: 95%; 
+    max-width: 1600px; 
+    margin: auto; 
+}
+
+#seccion-registro form {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+
+h2 { 
+    color: #6a9ce4; 
+    font-weight: 500;
+    margin-bottom: 25px;
+    border-bottom: none; 
+}
+
+/* Diseño para los formularios*/
+form { 
+    margin-bottom: 20px; 
+    padding: 30px; 
+    background-color: #18202d; 
+    border: none; 
+    border-radius: 12px; 
+}
+
+label { 
+    display: block; 
+    margin-top: 10px; 
+    font-weight: normal; 
+    color: #8da9d4; 
+}
+
+input, textarea, select { 
+    background-color: #101620; 
+    color: #e0e8f5; 
+    border: none; 
+    margin: 8px 0 15px 0; 
+    padding: 12px 15px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    border-radius: 6px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: #1c283a;
+}
+
+/*Botones */
+button { 
+    background-color: #4a7ec7; 
+    color: #ffffff; 
+    border: none; 
+    padding: 12px 20px;
+    cursor: pointer; 
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover:not(:disabled) { 
+    background-color: #3b68a8; 
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: #243144;
+    color: #a3c0eb;
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background-color: #2c3c54;
+}
+
+/* Diseño para la tabla */
+.table-container {
+    background-color: #18202d;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    padding: 10px;
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+th, td { 
+    padding: 20px 18px;
+    text-align: left; 
+    border-bottom: 1px solid #1f2a3d; 
+    vertical-align: middle; 
+    line-height: 1.5; 
+}
+
+th { 
+    background-color: transparent; /* Sin fondo oscuro para la cabecera */
+    color: #6a9ce4; 
+    font-size: 0.9em; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    padding-bottom: 15px;
+}
+
+tbody tr { 
+    transition: background-color 0.2s; 
+}
+
+tbody tr:hover { 
+    background-color: #1e2838; 
+}
+
+tbody tr:last-child td { 
+    border-bottom: none; 
+}
+
+
+.btn-update { 
+    background-color: #2d4566; 
+    color: #b0cce6; 
+    margin-top: 0;
+    padding: 8px 14px;
+    font-size: 0.9em;
+}
+
+.btn-update:hover:not(:disabled) { 
+    background-color: #3b5a85; 
+}
+
+#mensaje { margin-bottom: 15px; font-weight: normal; color: #6a9ce4; }
+
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px; 
+    font-size: 0.85em;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+}
+
+
+.badge-disponible {
+    background-color: #1c362a; 
+    color: #6fc29b;
+}
+
+.badge-nodisponible {
+    background-color: #3d2328; 
+    color: #d17586;
+}
+
+/* Ajustes de celdas de edición */
+.edit-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.edit-group input, .edit-group select {
+    padding: 8px 10px;
+    font-size: 0.9em;
+    margin: 0;
+    background-color: #121822; 
+}
+
+/*
+   Menu de navegacion
+   */
+.nav-menu {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 30px;
+    border-bottom: none; 
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #557299;
+    border: none;
+    font-size: 1.05em;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px; 
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    color: #8da9d4;
+    background-color: #18202d;
+}
+
+.nav-btn.activo {
+    color: #ffffff;
+    background-color: #4a7ec7;
+}
